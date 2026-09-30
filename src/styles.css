@@ -1,0 +1,109 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --color-bg: #121212;
+  --color-surface: #1e1e1e;
+  --color-surface-2: #262626;
+  --color-fg: #f3f3f3;
+  --color-muted: #a3a3a3;
+  --color-subtle: #737373;
+  --color-accent: #ff4d4d;
+  --color-accent-fg: #121212;
+  --color-border: #2c2c2c;
+  --color-success: #3ddc97;
+  --color-warn: #e8b86d;
+
+  --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Syne", "Figtree", ui-sans-serif, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 28px;
+
+  --shadow-border: 0 0 0 1px rgb(255 255 255 / 0.08);
+  --shadow-border-hover: 0 0 0 1px rgb(255 255 255 / 0.14);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+
+  body {
+    min-height: 100dvh;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+    letter-spacing: -0.03em;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  img {
+    outline: 1px solid rgb(255 255 255 / 0.1);
+    outline-offset: -1px;
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--color-accent) 70%, black);
+    color: var(--color-fg);
+  }
+}
+
+@layer utilities {
+  .receipt-perforation {
+    height: 10px;
+    background-image: radial-gradient(
+      circle at 6px 5px,
+      var(--color-bg) 3px,
+      transparent 3.2px
+    );
+    background-size: 12px 10px;
+    background-repeat: repeat-x;
+  }
+
+  .pos-grain {
+    background-image: radial-gradient(
+      rgb(255 255 255 / 0.03) 0.6px,
+      transparent 0.6px
+    );
+    background-size: 3px 3px;
+  }
+
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

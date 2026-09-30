@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      background: #121212;
+    }
+    .stage {
+      width: 1200px;
+      height: 630px;
+      background:
+        radial-gradient(ellipse 78% 68% at 50% 48%, #1E1E1E 0%, #121212 74%);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .frame {
+      position: absolute;
+      inset: 48px 64px;
+      border: 1px solid rgba(243, 243, 243, 0.08);
+      pointer-events: none;
+    }
+    .spine {
+      position: absolute;
+      left: 64px;
+      top: 48px;
+      bottom: 48px;
+      width: 4px;
+      background: #FF4D4D;
+    }
+    .lockup {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 16px;
+    }
+    .mark {
+      width: 10px;
+      height: 10px;
+      background: #FF4D4D;
+      transform: rotate(45deg);
+      margin-bottom: 8px;
+    }
+    .eyebrow {
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      color: #FF4D4D;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0.55em;
+      padding-left: 0.55em;
+      text-transform: uppercase;
+    }
+    .rule {
+      width: 72px;
+      height: 2px;
+      background: #FF4D4D;
+      margin: 2px 0 6px;
+    }
+    .title {
+      font-family: "Syne", "Liberation Sans", sans-serif;
+      color: #F3F3F3;
+      font-size: 76px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1;
+      white-space: nowrap;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <div class="frame"></div>
+    <div class="spine"></div>
+    <div class="lockup">
+      <div class="mark"></div>
+      <div class="eyebrow">WEB</div>
+      <div class="rule"></div>
+      <div class="title">FAIS AISYAN</div>
+    </div>
+  </div>
+</body>
+</html>

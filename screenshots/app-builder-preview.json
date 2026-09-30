@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Web Fais Aisyan",
+      "hasCanvas": false,
+      "bodyTextLen": 1924,
+      "bodyTextHash": "a52979e9270a36e6e42920477fbf9e764f0ad526abb0887fff4a58b121945afb",
+      "bodyTextPrefix": "FA Web Fais Aisyan POS · TJKT @faisaisyan fais.aisyan@gmail.com ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Web Fais Aisyan",
+      "hasCanvas": false,
+      "bodyTextLen": 1566,
+      "bodyTextHash": "825f3eca2f057c5913fa79b0943cae72749761dab40be3a2232af3651be2d307",
+      "bodyTextPrefix": "FA Web Fais Aisyan ID EN GALERI Tampilan rak TAMPILAN RAK · 8 IT",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
